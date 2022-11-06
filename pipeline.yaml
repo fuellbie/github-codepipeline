@@ -8,9 +8,9 @@ Parameters:
   GitHubOAuthToken:
     Type: String
     NoEcho: true
-    MinLength: 40
-    MaxLength: 40
-    AllowedPattern: '[a-z0-9]*'
+    MinLength: 93
+    MaxLength: 93
+    AllowedPattern: '[_a-z0-9]*'
 
   # *** The remaining parameters should either be:
   # - overridden via changing "Default" here (PREFERABLE, since then they're in source control)
@@ -19,7 +19,7 @@ Parameters:
   # *** The owner of the Github repo for this application.
   GitHubOwner:
     Type: String
-    Default: symphoniacloud
+    Default: fuellbie
     AllowedPattern: "[A-Za-z0-9-]+"
 
   GitHubRepo:
@@ -29,7 +29,7 @@ Parameters:
 
   GitHubBranch:
     Type: String
-    Default: master
+    Default: main
     AllowedPattern: "[A-Za-z0-9-]+"
 
   # *** The stack name for the actual application we're deploying
